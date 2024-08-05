@@ -1,0 +1,215 @@
+import zipfile
+
+# Creating a zip file with the enhanced HTML content
+with zipfile.ZipFile('/mnt/data/we-are-the-world-enhanced.zip', 'w') as zipf:
+    zipf.writestr('index.html', """
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>We Are The World (WATW)</title>
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    </head>
+    <body class="bg-gray-100 text-gray-800">
+        <!-- Header -->
+        <header class="bg-blue-600 text-white p-4">
+            <div class="container mx-auto">
+                <h1 class="text-3xl font-bold">We Are The World (WATW)</h1>
+                <p class="text-lg">Join us in making the world a better place by empowering individuals, promoting unity, and building sustainable communities.</p>
+            </div>
+        </header>
+        <!-- Navigation -->
+        <nav class="bg-blue-500 text-white p-4">
+            <div class="container mx-auto flex justify-around">
+                <a href="#home" class="hover:underline" aria-label="Home">Home</a>
+                <a href="#about" class="hover:underline" aria-label="About Us">About Us</a>
+                <a href="#programs" class="hover:underline" aria-label="Programs">Programs</a>
+                <a href="#get-involved" class="hover:underline" aria-label="Get Involved">Get Involved</a>
+                <a href="#contact" class="hover:underline" aria-label="Contact Us">Contact Us</a>
+                <a href="#news" class="hover:underline" aria-label="News and Events">News and Events</a>
+                <a href="#success-stories" class="hover:underline" aria-label="Success Stories">Success Stories</a>
+                <a href="#blog" class="hover:underline" aria-label="Blog">Blog</a>
+            </div>
+        </nav>
+        <!-- Main Content -->
+        <main class="container mx-auto p-4">
+            <!-- Home Section -->
+            <section id="home" class="my-8">
+                <h2 class="text-2xl font-bold">Welcome to We Are The World (WATW)</h2>
+                <p>Join us in making the world a better place by empowering individuals, promoting unity, and building sustainable communities. Explore our programs and initiatives designed to uplift marginalized individuals and create lasting change.</p>
+            </section>
+            <!-- About Us Section -->
+            <section id="about" class="my-8">
+                <h2 class="text-2xl font-bold">About Us</h2>
+                <h3 class="text-xl font-semibold">Vision</h3>
+                <p>To see individuals take a leadership role in addressing the most urgent issues facing the world, supported by their communities, civil society, government, and businesses.</p>
+                <h3 class="text-xl font-semibold">Mission</h3>
+                <p>To place marginalized people at the forefront of development.</p>
+                <h3 class="text-xl font-semibold">Objectives</h3>
+                <ul class="list-disc pl-5">
+                    <li>Empower individuals with social revolving funds.</li>
+                    <li>Promote unity and prevent conflicts to enhance social cohesion and socio-economic development among individuals.</li>
+                    <li>Build sustainable ecological development communities in developing societies.</li>
+                    <li>Equip marginalized individuals with sustainable life skills.</li>
+                    <li>Link individuals to public health and education systems.</li>
+                </ul>
+            </section>
+            <!-- Our Story Section -->
+            <section id="our-story" class="my-8">
+                <h2 class="text-2xl font-bold">Our Story</h2>
+                <p>Founded with the belief that everyone deserves a chance to thrive, We Are The World (WATW) has been working tirelessly to support marginalized communities. Our diverse programs aim to address the root causes of poverty and homelessness, foster education and job creation, and promote health and wellness.</p>
+            </section>
+            <!-- Programs Section -->
+            <section id="programs" class="my-8">
+                <h2 class="text-2xl font-bold">Programs</h2>
+                <div class="my-4">
+                    <h3 class="text-xl font-semibold">Every Face Has A Story</h3>
+                    <p>A television program documenting real-life situations, highlighting people with chronic conditions and children with unique talents often unnoticed by society.</p>
+                    <ul class="list-disc pl-5">
+                        <li>Provide help for people with chronic illnesses.</li>
+                        <li>Promote hidden potential and talent in every child.</li>
+                        <li>Raise education and health funds for children in need.</li>
+                    </ul>
+                </div>
+                <div class="my-4">
+                    <h3 class="text-xl font-semibold">Every Child My Child (Orphanages Support)</h3>
+                    <p>Dedicated to supporting orphaned and vulnerable children, addressing the challenges they face due to poverty.</p>
+                    <ul class="list-disc pl-5">
+                        <li>Raise awareness of the plight of indigent children.</li>
+                        <li>Alert society to the social consequences of neglecting these problems.</li>
+                        <li>Raise funds to improve the conditions of indigent children.</li>
+                    </ul>
+                </div>
+                <div class="my-4">
+                    <h3 class="text-xl font-semibold">Community Schools (WATWCSCDC)</h3>
+                    <p>Providing early care and education for children from age one, accredited by the Ministry of Education.</p>
+                    <p>Current Status: One school in Mongu with 120 registered students.</p>
+                </div>
+                <div class="my-4">
+                    <h3 class="text-xl font-semibold">Nation Building (Job Creation and Entrepreneurs Campaign)</h3>
+                    <p>Focused on lifting unemployed youth, men, and women by teaching them basic skills necessary for joining the labor force and creating entrepreneurship opportunities.</p>
+                    <ul class="list-disc pl-5">
+                        <li>Driving, peanut butter making, brick making, chicken feed production, soap making, tailoring and designing, baking, computer training, video production, fish farming, agriculture for business.</li>
+                    </ul>
+                </div>
+                <div class="my-4">
+                    <h3 class="text-xl font-semibold">Social Revolving Fund (GNRD)</h3>
+                    <p>A social financial community program where people donate money to each other, earning financial rewards over time. This program empowers individuals to contribute significantly to development processes.</p>
+                </div>
+                <div class="my-4">
+                    <h3 class="text-xl font-semibold">Remember Me Project</h3>
+                    <p>A transformative initiative aimed at rehabilitating homeless street persons by providing comprehensive support through emergency shelter, healthcare, vocational training, and integration into society.</p>
+                    <ul class="list-disc pl-5">
+                        <li>Provide emergency shelter and basic necessities.</li>
+                        <li>Deliver healthcare and mental health services.</li>
+                        <li>Facilitate vocational training and employment support.</li>
+                        <li>Integrate rehabilitated individuals back into society.</li>
+                    </ul>
+                </div>
+            </section>
+            <!-- Get Involved Section -->
+            <section id="get-involved" class="my-8">
+                <h2 class="text-2xl font-bold">Get Involved</h2>
+                <div class="my-4">
+                    <h3 class="text-xl font-semibold">Volunteer</h3>
+                    <p>Join us in making a difference. Volunteer your time and skills to support our programs and initiatives.</p>
+                </div>
+                <div class="my-4">
+                    <h3 class="text-xl font-semibold">Donate</h3>
+                    <p>Your contributions can make a significant impact. Support us financially to help us continue our mission of empowering individuals and building sustainable communities.</p>
+                </div>
+                <div class="my-4">
+                    <h3 class="text-xl font-semibold">Partner with Us</h3>
+                    <p>Collaborate with us to create lasting change. We welcome partnerships with businesses, non-profit organizations, and community groups.</p>
+                </div>
+                <div class="my-4">
+                    <h3 class="text-xl font-semibold">Become an Ambassador</h3>
+                    <p>Represent We Are The World and be a key partner in any of our programs. As an ambassador, you will:</p>
+                    <ul class="list-disc pl-5">
+                        <li>Promote our mission and programs.</li>
+                        <li>Engage with your community to raise awareness and support.</li>
+                        <li>Participate in events and campaigns.</li>
+                        <li>Help us grow our network and impact.</li>
+                    </ul>
+                    <form class="bg-white p-4 rounded shadow-md" onsubmit="return validateForm()">
+                        <h4 class="text-lg font-semibold">Sign Up to Become an Ambassador</h4>
+                        <label class="block my-2">
+                            <span class="block text-gray-700">Name:</span>
+                            <input type="text" class="mt-1 block w-full" placeholder="Your Name" required>
+                        </label>
+                        <label class="block my-2">
+                            <span class="block text-gray-700">Email:</span>
+                            <input type="email" class="mt-1 block w-full" placeholder="Your Email" required>
+                        </label>
+                        <label class="block my-2">
+                            <span class="block text-gray-700">Phone:</span>
+                            <input type="tel" class="mt-1 block w-full" placeholder="Your Phone Number" required>
+                        </label>
+                        <label class="block my-2">
+                            <span class="block text-gray-700">Why do you want to become an ambassador?</span>
+                            <textarea class="mt-1 block w-full" rows="3" placeholder="Your answer" required></textarea>
+                        </label>
+                        <label class="block my-2">
+                            <span class="block text-gray-700">Which program(s) are you interested in?</span>
+                            <select class="mt-1 block w-full" multiple required>
+                                <option>Every Face Has A Story</option>
+                                <option>Every Child My Child</option>
+                                <option>Community Schools</option>
+                                <option>Nation Building</option>
+                                <option>Social Revolving Fund</option>
+                                <option>Remember Me Project</option>
+                            </select>
+                        </label>
+                        <label class="block my-2">
+                            <span class="block text-gray-700">How did you hear about us?</span>
+                            <input type="text" class="mt-1 block w-full" placeholder="Your Answer" required>
+                        </label>
+                        <button type="submit" class="bg-blue-600 text-white py-2 px-4 rounded">Submit</button>
+                    </form>
+                </div>
+            </section>
+            <!-- Contact Us Section -->
+            <section id="contact" class="my-8">
+                <h2 class="text-2xl font-bold">Contact Us</h2>
+                <p>We would love to hear from you! Whether you have questions, want to get involved, or need more information, please reach out to us.</p>
+                <p><strong>Head Office:</strong> The 3rd Floor, Design House, Cairo Road, Kang'ombe and Associates P.O. Box 39428 Lusaka, Zambia</p>
+                <p><strong>Office:</strong> +260953912101</p>
+                <p><strong>Mobile:</strong> +260966652085</p>
+                <p><strong>Email:</strong> <a href="mailto:wearetheworldzambia@gmail.com" class="text-blue-600 hover:underline">wearetheworldzambia@gmail.com</a></p>
+            </section>
+            <!-- News and Events Section -->
+            <section id="news" class="my-8">
+                <h2 class="text-2xl font-bold">News and Events</h2>
+                <p>Stay updated with the latest news and events from We Are The World. Learn about our upcoming programs, success stories, and how you can participate in making a difference.</p>
+            </section>
+            <!-- Success Stories Section -->
+            <section id="success-stories" class="my-8">
+                <h2 class="text-2xl font-bold">Success Stories</h2>
+                <p>Read inspiring stories of individuals whose lives have been transformed through our programs. See the impact of our work and the difference we are making in communities across Zambia.</p>
+            </section>
+            <!-- Blog Section -->
+            <section id="blog" class="my-8">
+                <h2 class="text-2xl font-bold">Blog</h2>
+                <p>Explore our blog for insights, updates, and articles on social issues, community development, and more. Join the conversation and share your thoughts with us.</p>
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer class="bg-blue-600 text-white p-4">
+            <div class="container mx-auto text-center">
+                &copy; 2024 We Are The World (WATW). All Rights Reserved.
+            </div>
+        </footer>
+        <script>
+            function validateForm() {
+                // Add form validation code here if needed
+                return true;
+            }
+        </script>
+    </body>
+    </html>
+    """)
+
+# Provide a download link for the zip file
+import ace_tools as tools
+tools.display_dataframe_to_user(name="we-are-the-world-enhanced.zip", dataframe=None)
